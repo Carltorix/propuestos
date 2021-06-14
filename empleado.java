@@ -18,10 +18,10 @@ public class empleado {
 
     public String toString() {
         return "Empleado: " +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", fechaNac=" + fechaNac.toString() +
-                ", salario=" + salario
+                "nombre: " + nombre +
+                ", apellido: " + apellido +
+                ", fechaNac: " + fechaNac.toString() +
+                ", salario: $" + salario
                 ;
     } 
     

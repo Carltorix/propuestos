@@ -44,7 +44,7 @@ public class ejercicio5 {
         List<empleado> listaEmpleado = new ArrayList<>();
 
         try {
-            file = new File("E:/curso tercera parte/java2021/Nueva carpeta/propuestos/empleados.txt");
+            file = new File("empleados.txt");
             fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
             String empleadoStr;
@@ -56,7 +56,7 @@ public class ejercicio5 {
             exception.printStackTrace();
         } finally {
             try {
-                if (null != fileReader)
+                if (fileReader != null)
                     fileReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
